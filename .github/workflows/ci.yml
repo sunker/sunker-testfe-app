@@ -160,6 +160,9 @@ jobs:
       - name: Install dev dependencies
         run: npm ci
 
+      - name: Build frontendw
+        run: npm run build
+
       - name: Start Grafana
         run: |
           docker-compose pull

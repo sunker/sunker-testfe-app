@@ -170,7 +170,7 @@ jobs:
         with:
           url: 'http://localhost:3000/'
           responseCode: 200
-          timeout: 380000
+          timeout: 60000
           interval: 500
 
       - name: Install Playwright Browsers
@@ -196,8 +196,6 @@ jobs:
           path: grafana-server.log
           retention-days: 5
 
-      # If your repository is public, uploading the Playwright report will make it public on the Internet.
-      # Beware not to expose sensitive information.
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         if: ${{ always() && steps.run-tests.outcome == 'failure' }}

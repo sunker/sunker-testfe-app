@@ -22,11 +22,11 @@ App plugins can let you create a custom out-of-the-box monitoring experience by 
    npm run dev
    ```
 
-3. Build plugin in production mode
+3-. Build plugin in production mode
 
-   ```bash
-   npm run build
-   ```
+```bash
+npm run build
+```
 
 4. Run the tests (using Jest)
 

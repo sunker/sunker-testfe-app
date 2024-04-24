@@ -138,6 +138,7 @@ jobs:
             provisioning
             tests
             .config
+            src/plugin.json
 
       - name: log files
         run: |
@@ -167,8 +168,8 @@ jobs:
       - name: Install dev dependencies
         run: npm ci
 
-      - name: Build frontendw
-        run: npm run build
+      # - name: Build frontendw
+      #   run: npm run build
 
       - name: Start Grafana
         run: |

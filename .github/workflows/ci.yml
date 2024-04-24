@@ -148,7 +148,7 @@ jobs:
           ls -la .config
 
       - name: Download plugin
-        if: needs.build.outputs.has-backend == 'true'
+        # if: needs.build.outputs.has-backend == 'true'
         uses: actions/download-artifact@v4
         with:
           path: dist
